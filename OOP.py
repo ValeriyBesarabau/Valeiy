@@ -53,12 +53,11 @@
 # class Dog:
 #
 #
-#     def __init__(self, height, weight, name, age, change_name):
+#     def __init__(self, height, weight, name, age):
 #         self.height = height
 #         self.weight = weight
 #         self.name = name
 #         self.age = age
-#         self.change_name = change_name
 #
 #
 #     def jump(self, m):
@@ -72,14 +71,17 @@
 #     def bark(self, bark):
 #         return f"Собака {self.name} {bark} лает"
 #
+#     def change_name(self, new_name):
+#         self.name = new_name
 #
-# sheep_dog = Dog(1.5, 60, "Локи", 6, "Немецкая")
+#
+# sheep_dog = Dog(1.5, 60, "Локи", 6)
 # sheep_dog.name = "пушок"
-# change_name = sheep_dog.name
 #
-# 
+#
+#
 # print(sheep_dog.jump(3))
 # print(sheep_dog.run(10))
 # print(sheep_dog.bark("громко"))
 # print(sheep_dog.__dict__)
-# print(change_name)
+# print(sheep_dog.name)
